@@ -1,0 +1,120 @@
+body.scheme{
+  /*background-color: #999966;*/
+  background-image: url(../images/floor.jpg);
+}
+div.up{
+  background: linear-gradient(lightblue,#999966);
+  font-style: italic;
+  font-family: fantasy;
+  font-size: 150%;
+  text-align: center;
+}
+*{
+  box-sizing: border-box;
+}
+div.column {
+    transition: all .2s ease-in-out;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    height: 600px;
+    opacity: 0.5;
+    /*border-style: dashed;*/
+}
+div.column:hover{
+  transform: scale(1.1);
+  transition-delay: 1.1;
+  width: 30%;
+  height: 80%;
+  opacity: 1;
+}
+/*div.column:hover::before{
+  color: white;
+  font-size: 50px;
+  top: 0;
+  text-align: center;
+  content:'sometext';
+  position: relative;
+  display: inline-block;
+  line-height: 300px;
+} */
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+p.text{
+  text-align: center;
+  font-family: fantasy;
+  font-size: 30px;
+}
+img{
+    border-radius: 50%;
+}
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=30);
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+div.box {
+    margin: auto;
+    width: 30%;
+    height: 70%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+div.box {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}

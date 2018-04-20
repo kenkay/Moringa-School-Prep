@@ -1,0 +1,31 @@
+input.form-control {
+  width: 30%;
+}
+
+p {
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+}
+
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  text-align: center;
+
+}
+
+.jumbotron {
+  background-image: url(../img/pingnet.svg);
+  background-size: cover;
+}
+
+#paddle {
+  margin-left: -170px;
+}
+
+#rule_align{
+  text-align: left;
+}
+.container{
+display: flex;
+}

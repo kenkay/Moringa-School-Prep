@@ -1,0 +1,134 @@
+body {
+  #background-image: url(../images/polka-dots.png);
+  background-color: white;
+}
+h1.tropical {
+  height: 20%;
+  color: #f7325e;
+  font-size: 50px;
+  #position: fixed;
+}
+h1.popular {
+  height: 20%;
+  color: #f7325e;
+  font-size: 50px;
+}
+p.tropical{
+  height: inherit;
+  color: #7dc410;
+  font-family: fantasy;
+  font-size: 20px
+}
+p {
+  color: #7dc410;
+  font-family: fantasy;
+  font-size: 20px
+}
+div.grid-container{
+  background-color: brown;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:5px ;
+  padding: ;
+}
+grid-container > div {
+  text-align: center;
+  padding:;
+  font-size: 30px;
+}
+header {
+  background-image: url("../images/polka-dots.png");
+  text-align: center;
+  background-size: cover;
+}
+div.malindi{
+  transition: all .2s ease-in-out;
+  width: 50%;
+  height: 80%;
+  float: left;
+}
+div.malindi:hover{
+  transform: scale(1.1);
+  transition-delay: 1.1;
+  width: 50%;
+  height: 80%;
+  float: left;
+}
+div.malibu{
+  width: 50%;
+  height: 80%;
+  float: right;
+}
+div.malibu:hover{
+  transform: scale(1.1);
+  transition-delay: 1.1;
+  width: 50%;
+  height: 80%;
+  float: left;
+}
+div.text1{
+  width: 50%;
+  height: 80%;
+  float: left;
+  text-align: left;
+}
+div.text2{
+  width: 50%;
+  height: 80%;
+  float: right;
+  text-align: left;
+}
+@media screen and (max-width: 620px) {
+  .left, .main, .right {
+    width: 100%;
+  }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;

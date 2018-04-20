@@ -1,0 +1,126 @@
+p, h1, li, span {
+  font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  color: #d8e80f;
+}
+
+#calculate {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: #d8e80f;
+}
+
+label {
+  font-family: 'Dancing Script', cursive;
+  color: #d8e80f;
+  font-size: 26px;
+}
+
+.nav-bar {
+  height: 50px;
+  width: 1254px;
+  margin-left: -60px;
+  margin-top: -45px;
+}
+
+#header>h1 {
+  font-size: 110px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 8px;
+  color: #d8e80f;
+}
+
+.jumbotron {
+  background-color: white;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.col-md-2 {
+  margin-top: 0px;
+  background-color: white;
+  height: 250px;
+  width: 200px;
+}
+
+.col-md-10 {
+  margin-top: 0px;
+  margin-left: 5px;
+  background-color: white;
+  height: 600px;
+  width: 80%;
+  float: right;
+}
+
+#payment {
+  margin-top: 10px;
+  float: left;
+}
+
+#main {
+  background-image: url(../img/wood-background1.jpg);
+  background-size: cover;
+}
+
+.footer {
+  background-color: white;
+  height: 80px;
+  width: 100%
+}
+
+#customers {
+  margin-top: 30px;
+}
+
+.body {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #292c2f;
+  font-size: 30px;
+  width: 150%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #d8e80f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+p {
+  font-size: 18px;
+}
+
+#mce-EMAIL {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+
+#subscribe {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: #d8e80f;
+  font-weight: 600;
+}

@@ -1,0 +1,156 @@
+<html>
+
+<head>
+  <title> Class Project </title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/styles1.css" rel="stylesheet" type="text/css">
+  <link href="css/styles2.css" rel="stylesheet" type="text/css">
+  <link href="css/styles3.css" rel="stylesheet" type="text/css">
+  <link href="css/styles4.css" rel="stylesheet" type="text/css">
+  <link href="css/styles5.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+</head>
+
+<body id="main">
+  <div class="container-fluid">
+    <!--section 1 -->
+    <div class="jumbotron" id="header">
+      <div class="nav-bar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#bottom">Contact</a></li>
+        </ul>
+      </div>
+      <h1> Caffe Art </h1>
+    </div>
+    <!--end of section 1 -->
+    <!--section 2-->
+    <div class="jumbotron" id="section2">
+      <div class="row">
+        <!--First Split -->
+        <div class="col-md-8" id="foodMenu">
+          <div class="wrap">
+            <div id="arrow-left" class="arrow"> </div>
+            <div id="slider" window.onload="changeImg()">
+              <div class="slide slide1">
+                <div class="slide-content">
+                  <span id="slideimage">Terrific Tuesdays</span>
+                </div>
+              </div>
+              <div class="slide slide2">
+                <div class="slide-content">
+                  <span id="slideimage2">Amazing<br>Wednesdays</span>
+                </div>
+              </div>
+              <div class="slide slide3">
+                <div class="slide-content">
+                  <span id="slideimage3">TGI<br>Fridays</span>
+                </div>
+              </div>
+              <div class="slide slide4">
+                <div class="slide-content">
+                  <span id="slideimage4">Come and Enjoy<br>our Tasty Meals!!!</span>
+                </div>
+              </div>
+            </div>
+            <div id="arrow-right" class="arrow"> </div>
+          </div>
+        </div>
+      </div>
+      <!--End of First Split-->
+      <!--Second Split-->
+      <div class="col-md-4" id="ticket">
+        <form id="myform">
+          <p><strong> Please review your Order below</strong> </p>
+          <p><strong>Day of the week:</strong></p>
+          <select id="day" name="days" onchange="populate('day','food')">
+              <option value=""></option>
+              <option value="Monday"><strong>Monday</strong></option>
+              <option value="Tuesday"><strong>Tuesday</strong></option>
+              <option value="Wednesday"><strong>Wednesday</strong></option>
+              <option value="Thursday"><strong>Thursday</strong></option>
+              <option value="Friday"><strong>Friday</strong></option>
+           </select>
+          <br>
+          <p><strong>Choose a Meal:</strong></p>
+          <select id="food" multiple="multiple" type="checkbox">
+          </select>
+          <br>
+          <br>
+          <label><strong>Total</strong></label>
+          <input id="price" type="" onchange="check_sm()">
+          <br>
+          <button id="calculate" type="submit" onclick="Confirm()" class="btn btn-danger"><strong>Confirm Order<strong></button>
+          <p id="genOrder"> </p>
+          <p id="food"> </p>
+          <p id="food2"> </p>
+        </form>
+        <hr />
+      </div>
+    </div>
+
+    <footer class="footer-distributed" id="section4">
+      <div class="footer-right" id="bottom">
+        <p style="color:#d8e80f; ">Contact Us</p>
+        <br>
+        <br>
+        <form action="https://github.us12.list-manage.com/subscribe/post?u=28cc978a89dc2146705d0aa5a&amp;id=cdc30ce214" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input type="text" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <input type="submit" value="Subscribe to our daily Menu" id="subscribe">
+        </form>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="https://github.com/kenkay/Class_Project"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!--End of Forth section-->
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/script1.js"></script>
+
+
+  </div>
+
+  <!--pdf gen-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js" integrity="sha256-vIL0pZJsOKSz76KKVCyLxzkOT00vXs+Qz4fYRVMoDhw=" crossorigin="anonymous">
+  </script>
+
+  <script>
+    // init the jsPDF library
+    const pdf = new jsPDF();
+    // select the button
+    let button = document.querySelector('button');
+    // select the input
+    let output = document.getElementById('price');
+    //var x = document.getElementById("genOrder").innerHTML = Math.floor(1000 * Math.random()) + 1
+    //var orderNo = x
+    //let order = orderNo
+    // add 'click' event listener for the button
+    button.addEventListener('click', printPDF)
+    // actual PDF options
+    function printPDF() {
+      // @param 1 - Coordinate (in units declared at inception of PDF document) against left edge of the page
+      // @param 2 - Coordinate (in units declared at inception of PDF document) against upper edge of the page
+      // @param 3 - String or array of strings to be added to the page. Each line is shifted one line down per font, spacing settings declared before this call.
+      //pdf.text(10, 10, `Your Order Number is ${order}`);
+      pdf.text(10, 10, `Your bill is Ksh: ${output.value}`);
+
+      // save the PDF document (downloadable)
+      pdf.save();
+    }
+  </script>
+
+</body>
+
+</html>

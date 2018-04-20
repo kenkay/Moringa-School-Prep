@@ -1,0 +1,77 @@
+#section2 {
+  display: flex;
+  background-image: url(../img/wood-background1.jpg);
+  height: 600px;
+  margin-top: 10px;
+}
+
+#section3 {
+  height: 500px;
+  background-image: url(../img/wood-background1.jpg);
+}
+
+#section4 {
+  margin-top: -25px;
+}
+
+#ticket {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: solid #292c2f;
+  height: 580px;
+  width: 280px;
+  margin-bottom: 25px;
+  margin-left: 170px;
+  margin-top: -30px;
+  box-shadow: red;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+#header {
+  height: 180px;
+  background-image: url(../img/wood-background1.jpg);
+  margin-top: -20px;
+}
+
+#foodMenu {
+  display: flex;
+  box-sizing: border-box;
+  padding-right: -10px;
+  height: 535px;
+  width: 900px;
+  box-shadow: red;
+  margin-left: -30px;
+  margin-right: -135px;
+  margin-top: -30px;
+  justify-content: flex-start;
+}
+
+#customerReview {
+  display: flex;
+  box-sizing: border-box;
+  border: 10px solid black;
+  height: 380px;
+  width: 500px;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-inner>img {
+  display: none;
+  width: 480px;
+  height: 360px;
+  margin-left: -15px;
+}
+
+.slider-inner>img.active {
+  display: inline-block;
+}
+
+#ticket>p {
+  font-weight: bolder;
+  font-size: 25px;
+}

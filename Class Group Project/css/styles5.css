@@ -1,0 +1,55 @@
+#mondayMenu {
+  background-image: url(../img/wood-background.jpg);
+  background-size: cover;
+  display: flex;
+}
+
+#mondayMenu1 {
+  height: 500px;
+  background-image: url(../img/wood-background1.jpg);
+  color: #d8e80f;
+}
+
+#mondayMenu2 {
+  display: flex;
+  font-weight: bolder;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+#tuesdayMenu {
+  background-image: url(../img/wood-background1.jpg);
+  background-size: cover;
+  margin-top: -25px;
+  color: #d8e80f;
+}
+
+#wednesdayMenu {
+  background-image: url(../img/wood-background1.jpg);
+  background-size: cover;
+  margin-top: -25px;
+  color: #d8e80f;
+}
+
+#thursdayMenu {
+  background-image: url(../img/wood-background1.jpg);
+  background-size: cover;
+  margin-top: -25px;
+  color: #d8e80f;
+}
+
+#fridayMenu {
+  background-image: url(../img/wood-background1.jpg);
+  background-size: cover;
+  margin-top: -25px;
+  color: #d8e80f;
+}

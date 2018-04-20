@@ -1,0 +1,142 @@
+body.whole{
+  background-color: white;
+  font-weight: 700;
+  font-family: serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: lightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:black;
+}
+div.head{
+  background-color: white;
+  height: 80%;
+  width: 100%;
+}
+div.image{
+  background-color: white;
+  height: 65%;
+  width: 100%;
+  padding: 60px 0 0 60px;
+}
+#profilepic{
+    border-radius: 50%;
+}
+div.intro{
+  float: right;
+  text-align: left;
+  height: 30%;
+  width: 70%;
+}
+h1 {
+  color: grey;
+  font-size: 250%;
+  font-weight: lighter;
+  margin-top: 0.5em;
+}
+p {
+  font-size: 2.0em;
+  line-height: 1.75em;
+}
+
+h1 strong{
+  font-weight: 800;
+  color: #293d3d;
+}
+a:link{
+  color: white;
+}
+.button.big{
+  font-size: 1.0em;
+  text-decoration: none;
+  padding: 20px;
+  background-color: #43B3E0;
+  border-radius: 6px;
+  color: white;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  text-decoration: underline;
+  font-weight: 700;
+}
+div.container{
+  padding: 60px 0 0 650px;
+  height: 400;
+}
+div.column{
+  border-radius: 6px;
+  float: left;
+  width: 30%;
+  padding: 5px;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15),
+                    0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+* {
+    box-sizing: border-box;
+}
+#subheader{
+  text-align: center;
+  font-size: 150%;
+  font-style: italic;
+}
+#skillcontent{
+  text-align: center;
+  font-size: 14px;
+}
+div.portfolio{
+  height: 60px;
+  width:60px;
+}
+#foot{
+  text-align: center;
+}
+div.project{
+  height: 500px;
+  width: 100%;
+  border-style: none;
+  border-color: black;
+  background-color: #ccccb3;
+  border-radius: 6px;
+  padding: 60px 0 0 150px;
+}
+#port1{
+  font-size: 18px;
+}
+@media only screen and (max-width:620px) {
+  .menu, .main, .right {
+    width:100%;
+  }
+div.end{
+  height: auto;
+  width: 100%;
+  background-color: white;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+}

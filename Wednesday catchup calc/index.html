@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <title> Calculator </title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body bgcolor="blue">
+  <div class="container-fluid">
+    <header class="jumbotron">
+      <h1> Calculator </h1>
+    </header>
+
+    <h2> Addition Form </h2>
+    <form id="additionForm">
+      <label for="">Number One</label>
+      <input type="text" class="form-control" id="addNumberOne"></input>
+
+      <label for="">Number Two</label>
+      <input type="number" class="form-control" id="addNumberTwo"></input>
+
+      <button class="btn btn-primary" id="additionButton"> Add </button>
+    </form>
+    <div id="addOutput">
+    </div>
+
+
+    <h2> Subtraction Form </h2>
+    <form id="subtractionForm">
+      <label for="">Number One</label>
+      <input type="text" class="form-control" id="subNumberOne" required></input>
+
+      <label for=""> Number Two</label>
+      <input type="text" class="form-control" id="subNumberTwo"></input>
+
+      <button class="btn btn-primary" id="subtractButton"> Subtract </button>
+    </form>
+    <div id="subOutput">
+    </div>
+
+    <h2> Multiply Form </h2>
+      <form id="multiForm">
+        <label for="">Number One</label>
+        <input type="text" class="form-control" id="mulNumberOne"></input>
+
+        <label for="">Number Two</label>
+        <input type="text" class="form-control" id="mulNumberTwo"></input>
+
+        <button class="btn btn-primary"> Multiply </button>
+      </form>
+      <div id="mulOutput">
+      </div>
+
+
+      <h2> Divide Form </h2>
+      <form>
+        <label for="">Number One</label>
+        <input type="text" class="form-control"></input>
+
+        <label for="">Number Two</label>
+        <input type="text" class="form-control"></input>
+
+        <button class="btn btn-primary"> Divide </button>
+      </form>
